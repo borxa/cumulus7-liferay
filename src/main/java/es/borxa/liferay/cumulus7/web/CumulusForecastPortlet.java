@@ -1,7 +1,7 @@
-package es.borxa.liferay.cumulus7.portlet;
+package es.borxa.liferay.cumulus7.web;
 
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
-import es.borxa.liferay.cumulus7.constants.CumulusPortletKeys;
+import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
 import javax.portlet.Portlet;
 import javax.portlet.PortletException;

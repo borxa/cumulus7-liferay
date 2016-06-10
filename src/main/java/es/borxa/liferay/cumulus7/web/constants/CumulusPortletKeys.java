@@ -1,4 +1,4 @@
-package es.borxa.liferay.cumulus7.constants;
+package es.borxa.liferay.cumulus7.web.constants;
 
 /**
  *

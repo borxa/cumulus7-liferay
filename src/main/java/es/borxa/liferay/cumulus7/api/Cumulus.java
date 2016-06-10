@@ -2,6 +2,7 @@ package es.borxa.liferay.cumulus7.api;
 
 import aQute.bnd.annotation.ProviderType;
 import com.liferay.portal.kernel.json.JSONObject;
+
 /**
  *
  * @author Borxa Varela Bouzas <borxa@varelabouzas.net>
