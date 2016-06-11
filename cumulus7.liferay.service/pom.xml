@@ -4,7 +4,7 @@
     <parent>
         <groupId>es.borxa.liferay</groupId>
         <artifactId>cumulus7.liferay</artifactId>
-        <version>0.1</version>
+        <version>0.0.1</version>
     </parent>
     <artifactId>cumulus7.liferay.service</artifactId>
     <name>Cumulus 7 Service Impl</name>
@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>es.borxa.liferay</groupId>
-            <artifactId>cumulus7-liferay-api</artifactId>
+            <artifactId>cumulus7.liferay.api</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>

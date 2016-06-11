@@ -6,11 +6,10 @@
     <parent>
         <groupId>es.borxa.liferay</groupId>
         <artifactId>cumulus7.liferay</artifactId>
-        <version>0.1</version>
+        <version>0.0.1</version>
     </parent>
     <groupId>es.borxa.liferay</groupId>
     <artifactId>cumulus7.liferay.web</artifactId>
-    <version>0.1</version>
     <name>Cumulus 7 Portlets</name>
     <packaging>jar</packaging>
     
