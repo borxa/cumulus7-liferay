@@ -20,11 +20,9 @@ import org.osgi.service.component.annotations.Component;
             "com.liferay.portlet.display-category=category.sample",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
-            "javax.portlet.name=" + CumulusPortletKeys.FORECAST,
-            "javax.portlet.display-name=cumulus-forecast", 
+            "javax.portlet.display-name=" + CumulusPortletKeys.FORECAST, 
             "javax.portlet.init-param.template-path=/",
             "javax.portlet.init-param.view-template=/forecast/view.jsp",
-            "javax.portlet.expiration-cache=0",
             "javax.portlet.resource-bundle=content.forecast.Language",
             "javax.portlet.security-role-ref=power-user,user"
         },
