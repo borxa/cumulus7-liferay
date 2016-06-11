@@ -17,7 +17,7 @@ import org.osgi.service.component.annotations.Component;
         immediate = true,
         property = {
             "com.liferay.portlet.css-class-wrapper=portlet-cumulus-forecast",
-            "com.liferay.portlet.display-category=category.cumulus",
+            "com.liferay.portlet.display-category=category.sample",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
             "javax.portlet.name=" + CumulusPortletKeys.FORECAST,

@@ -6,5 +6,5 @@ package es.borxa.liferay.cumulus7.web.constants;
  */
 public interface CumulusPortletKeys {
     
-    String FORECAST = "cumulus-forecast";
+    String FORECAST = "Cumulus Forecast";
 }
