@@ -3,10 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>es.borxa.liferay</groupId>
-        <artifactId>cumulus7-liferay</artifactId>
+        <artifactId>cumulus7.liferay</artifactId>
         <version>0.1</version>
     </parent>
-    <artifactId>cumulus7-liferay-api</artifactId>
+    <artifactId>cumulus7.liferay.service</artifactId>
+    <name>Cumulus 7 Service Impl</name>
     <packaging>jar</packaging>
     <dependencies>
         <dependency>
@@ -16,9 +17,15 @@
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>biz.aQute.bnd</groupId>
-            <artifactId>biz.aQute.bndlib</artifactId>
-            <version>3.2.0</version>
+            <groupId>org.osgi</groupId>
+            <artifactId>org.osgi.service.component.annotations</artifactId>
+            <version>1.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>es.borxa.liferay</groupId>
+            <artifactId>cumulus7-liferay-api</artifactId>
+            <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>
