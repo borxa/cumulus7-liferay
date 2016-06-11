@@ -1,6 +1,0 @@
-Bundle-Name: Cumulus Charts
-Bundle-SymbolicName: es.borxa.liferay.cumulus7.portlet
-Bundle-Version: 1.0.3
-Liferay-Releng-Module-Group-Description:
-Liferay-Releng-Module-Group-Title: Publication Tools
-Web-ContextPath: /cumulus

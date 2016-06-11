@@ -1,4 +1,4 @@
-package es.borxa.liferay.cumulus7.impl;
+package es.borxa.liferay.cumulus.liferay.impl;
 
 import com.liferay.portal.kernel.json.JSONException;
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
@@ -6,7 +6,7 @@ import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.util.HttpUtil;
-import es.borxa.liferay.cumulus7.api.Cumulus;
+import es.borxa.liferay.cumulus.liferay.api.Cumulus;
 import java.io.IOException;
 import java.net.URL;
 import org.osgi.service.component.annotations.Component;
