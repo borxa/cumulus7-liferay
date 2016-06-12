@@ -8,3 +8,5 @@
 </div>
 
 <liferay-ui:message key="forecast" />
+
+<liferay-ui:message key="observations" />
