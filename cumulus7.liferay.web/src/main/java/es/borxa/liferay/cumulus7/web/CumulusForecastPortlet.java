@@ -1,15 +1,18 @@
 package es.borxa.liferay.cumulus7.web;
 
 import com.liferay.portal.kernel.json.JSONObject;
+import com.liferay.portal.kernel.log.Log;
+import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import es.borxa.liferay.cumulus7.service.api.Cumulus;
 import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
-import es.borxa.liferay.cumulus7.web.service.CumulusService;
 import java.io.IOException;
 import javax.portlet.Portlet;
 import javax.portlet.PortletException;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
 import org.osgi.service.component.annotations.Component;
+import org.osgi.service.component.annotations.Reference;
 
 /**
  *
@@ -36,10 +39,21 @@ public class CumulusForecastPortlet extends MVCPortlet {
     public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
             throws IOException, PortletException {
 
-        System.out.println("doView");
-        CumulusService service = new CumulusService();
-        JSONObject json = service.getJSON("", 0);
-        System.out.println("JSON: " + json.toString());
+        JSONObject json = getCumulus().json("http://meteo.a-revolta.es/data.json", 0);
+        LOG.info("Size of JSON file: " + json.length());
+        
         super.doView(renderRequest, renderResponse);
     }
+    
+    public Cumulus getCumulus() {
+        return _cumulus;
+    }
+    
+    @Reference
+    public void setCumulus(Cumulus cumulus) {
+        _cumulus = cumulus;
+    }
+    
+    private Cumulus _cumulus;
+    private static final Log LOG = LogFactoryUtil.getLog(CumulusForecastPortlet.class);
 }
