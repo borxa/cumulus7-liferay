@@ -59,8 +59,8 @@
     </build>
     
     <modules>
+        <module>cumulus7.liferay.web</module>
         <module>cumulus7.liferay.api</module>
         <module>cumulus7.liferay.service</module>
-        <module>cumulus7.liferay.web</module>
     </modules>
 </project>

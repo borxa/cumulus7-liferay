@@ -1,7 +1,9 @@
 package es.borxa.liferay.cumulus7.web;
 
+import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
 import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
+import es.borxa.liferay.cumulus7.web.service.CumulusService;
 import java.io.IOException;
 import javax.portlet.Portlet;
 import javax.portlet.PortletException;
@@ -35,6 +37,9 @@ public class CumulusForecastPortlet extends MVCPortlet {
             throws IOException, PortletException {
 
         System.out.println("doView");
+        CumulusService service = new CumulusService();
+        JSONObject json = service.getJSON("", 0);
+        System.out.println("JSON: " + json.toString());
         super.doView(renderRequest, renderResponse);
     }
 }

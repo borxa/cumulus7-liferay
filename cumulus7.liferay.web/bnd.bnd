@@ -1,5 +1,7 @@
 Bundle-Version: 0.0.1
 Bundle-Name: Cumulus Portlets
+Bundle-SymbolicName: cumulus7.liferay.web
+Private-Package: es.borxa.cumulus7.web.service
 -jsp: *.jsp,*.jspf
 -plugin.bundle: com.liferay.ant.bnd.resource.bundle.ResourceBundleLoaderAnalyzerPlugin
 -plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin

@@ -9,7 +9,7 @@
         <version>0.0.1</version>
     </parent>
     <groupId>es.borxa.liferay</groupId>
-    <artifactId>cumulus7.liferay.web</artifactId>
+    <artifactId>cumulus7.web</artifactId>
     <name>Cumulus 7 Portlets</name>
     <packaging>jar</packaging>
     
@@ -63,6 +63,12 @@
             <groupId>org.osgi</groupId>
             <artifactId>org.osgi.service.component.annotations</artifactId>
             <version>1.3.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>es.borxa.liferay</groupId>
+            <artifactId>cumulus7.service.api</artifactId>
+            <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
