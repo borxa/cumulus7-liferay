@@ -1,5 +1,4 @@
 Bundle-Version: 0.0.1
 Bundle-Name: Cumulus JSON API Impl
 Bundle-SymbolicName: cumulus7.service.impl
-Private-Package: es.borxa.liferay.cumulus7.service.impl
 -sources: true
