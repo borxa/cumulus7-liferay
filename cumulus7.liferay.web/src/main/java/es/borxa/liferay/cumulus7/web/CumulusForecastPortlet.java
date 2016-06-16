@@ -25,7 +25,7 @@ import org.osgi.service.component.annotations.Reference;
             "com.liferay.portlet.display-category=category.cumulus",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
-            "javax.portlet.display-name=" + CumulusPortletKeys.FORECAST, 
+            "javax.portlet.display-name=" + CumulusPortletKeys.FORECAST,
             "javax.portlet.init-param.template-path=/",
             "javax.portlet.init-param.view-template=/forecast/view.jsp",
             "javax.portlet.resource-bundle=content.Language",
@@ -35,25 +35,28 @@ import org.osgi.service.component.annotations.Reference;
 )
 public class CumulusForecastPortlet extends MVCPortlet {
 
+    private static final Log LOG = LogFactoryUtil.getLog(CumulusForecastPortlet.class);
+    private Cumulus service;
+
     @Override
     public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
             throws IOException, PortletException {
 
-        JSONObject json = getCumulus().json("http://meteo.a-revolta.es/data.json", 0);
-        LOG.info("Size of JSON file: " + json.length());
+        JSONObject json = getCumulus().json("http://meteo.a-revolta.es/cumulus7.json", 0);
+        
+        renderRequest.setAttribute("isdaylight", json.get("isdaylight"));
+        renderRequest.setAttribute("forecastnumber", json.get("forecastnumber"));
         
         super.doView(renderRequest, renderResponse);
     }
-    
+
     public Cumulus getCumulus() {
-        return _cumulus;
+        return service;
     }
-    
+
     @Reference
     public void setCumulus(Cumulus cumulus) {
-        _cumulus = cumulus;
+        service = cumulus;
     }
-    
-    private Cumulus _cumulus;
-    private static final Log LOG = LogFactoryUtil.getLog(CumulusForecastPortlet.class);
+
 }

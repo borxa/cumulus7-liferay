@@ -6,7 +6,3 @@
     <img id="forecast-img" src="${renderRequest.contextPath}/forecast/img/forecast_${isdaylight}_${forecastnumber}.png" 
          alt="forecast" />
 </div>
-
-<liferay-ui:message key="forecast" />
-
-<liferay-ui:message key="observations" />
