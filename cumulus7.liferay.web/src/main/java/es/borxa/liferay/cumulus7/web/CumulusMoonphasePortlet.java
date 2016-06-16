@@ -21,31 +21,32 @@ import org.osgi.service.component.annotations.Reference;
 @Component(
         immediate = true,
         property = {
-            "com.liferay.portlet.css-class-wrapper=portlet-cumulus-forecast",
+            "com.liferay.portlet.css-class-wrapper=portlet-cumulus-moonphase",
             "com.liferay.portlet.display-category=category.cumulus",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
-            "javax.portlet.display-name=" + CumulusPortletKeys.FORECAST,
+            "javax.portlet.display-name=" + CumulusPortletKeys.MOONPHASE,
             "javax.portlet.init-param.template-path=/",
-            "javax.portlet.init-param.view-template=/forecast/view.jsp",
+            "javax.portlet.init-param.view-template=/moonphase/view.jsp",
             "javax.portlet.resource-bundle=content.Language",
             "javax.portlet.security-role-ref=power-user,user"
         },
         service = Portlet.class
 )
-public class CumulusForecastPortlet extends MVCPortlet {
-
-    private static final Log LOG = LogFactoryUtil.getLog(CumulusForecastPortlet.class);
+public class CumulusMoonphasePortlet extends MVCPortlet {
+    
+    private static final Log LOG = LogFactoryUtil.getLog(CumulusMoonphasePortlet.class);
     private Cumulus service;
-
+    
     @Override
     public void doView(RenderRequest renderRequest, RenderResponse renderResponse)
             throws IOException, PortletException {
 
         JSONObject json = getCumulus().json("http://meteo.a-revolta.es/cumulus7.json", 30);
         
-        renderRequest.setAttribute("isdaylight", json.get("isdaylight"));
-        renderRequest.setAttribute("forecastnumber", json.get("forecastnumber"));
+        renderRequest.setAttribute("moonphase", json.get("moonphase"));
+        renderRequest.setAttribute("moonPercentAbs", json.get("moonpercentabs"));
+        renderRequest.setAttribute("moonAge", json.get("moonage"));
         
         super.doView(renderRequest, renderResponse);
     }
@@ -58,5 +59,4 @@ public class CumulusForecastPortlet extends MVCPortlet {
     public void setCumulus(Cumulus cumulus) {
         service = cumulus;
     }
-
 }
