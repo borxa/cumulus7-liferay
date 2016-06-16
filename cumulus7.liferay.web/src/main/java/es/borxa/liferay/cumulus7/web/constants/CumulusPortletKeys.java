@@ -8,4 +8,6 @@ public final class CumulusPortletKeys {
     
     public static final String MOONPHASE = "moonphase";
     public static final String FORECAST = "forecast";
+    
+    private CumulusPortletKeys() {}
 }
