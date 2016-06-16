@@ -43,6 +43,7 @@ public class CumulusMoonphasePortlet extends MVCPortlet {
             throws IOException, PortletException {
 
         JSONObject json = getCumulus().json("http://meteo.a-revolta.es/cumulus7.json", 30);
+        LOG.debug(json.toString());
         
         renderRequest.setAttribute("moonphase", json.get("moonphase"));
         renderRequest.setAttribute("moonPercentAbs", json.get("moonpercentabs"));

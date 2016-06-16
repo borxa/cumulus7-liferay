@@ -43,6 +43,7 @@ public class CumulusForecastPortlet extends MVCPortlet {
             throws IOException, PortletException {
 
         JSONObject json = getCumulus().json("http://meteo.a-revolta.es/cumulus7.json", 30);
+        LOG.debug(json.toString());
         
         renderRequest.setAttribute("isdaylight", json.get("isdaylight"));
         renderRequest.setAttribute("forecastnumber", json.get("forecastnumber"));
