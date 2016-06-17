@@ -9,6 +9,31 @@
     <artifactId>cumulus7.service.impl</artifactId>
     <name>Cumulus 7 Service Impl</name>
     <packaging>jar</packaging>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-antrun-plugin</artifactId>
+                <version>1.8</version>
+                <executions>
+                    <execution>
+                        <id>copy</id>
+                        <phase>package</phase>
+                        <configuration>
+                            <target if="liferay.auto.deploy.dir">
+                                <copy file="target/${project.artifactId}-${project.version}.${project.packaging}" 
+                                      tofile="${liferay.auto.deploy.dir}/${project.artifactId}-${project.version}.${project.packaging}" />
+                            </target>
+                            <failOnError>true</failOnError>
+                        </configuration>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
     <dependencies>
         <dependency>
             <groupId>com.liferay.portal</groupId>
