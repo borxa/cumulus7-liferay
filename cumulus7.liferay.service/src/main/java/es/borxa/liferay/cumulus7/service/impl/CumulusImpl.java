@@ -1,7 +1,5 @@
 package es.borxa.liferay.cumulus7.service.impl;
 
-import com.liferay.portal.kernel.cache.PortalCache;
-import com.liferay.portal.kernel.cache.SingleVMPoolUtil;
 import com.liferay.portal.kernel.json.JSONException;
 import com.liferay.portal.kernel.json.JSONFactoryUtil;
 import com.liferay.portal.kernel.json.JSONObject;
@@ -26,40 +24,21 @@ import org.osgi.service.component.annotations.Component;
 public class CumulusImpl implements Cumulus {
 
     private static final Log LOG = LogFactoryUtil.getLog(CumulusImpl.class);
-    private static final PortalCache<String, JSONObject> CACHE
-            = SingleVMPoolUtil.getPortalCache(CumulusImpl.class.getName());
-    private String cacheKey = "cumulus-default";
+    private final CumulusCache cache = CumulusCache.getInstance();
 
     @Override
-    public JSONObject json(String url, int timeToLive) {
+    public JSONObject getJSON(String url, int timeToLive) {
 
-        JSONObject json = CACHE.get(cacheKey);
+        JSONObject json = cache.get();
         if (Validator.isNull(json)) {
             try {
-                String jsonString = HttpUtil.URLtoString(new URL(url));
-                json = JSONFactoryUtil.createJSONObject(jsonString);
-                CACHE.put(cacheKey, json, timeToLive);
+                json = JSONFactoryUtil.createJSONObject(HttpUtil.URLtoString(new URL(url)));
+                cache.put(json, timeToLive);
             } catch (IOException | JSONException ex) {
+                json = JSONFactoryUtil.createJSONObject();
                 LOG.warn(ex);
             }
         }
         return json;
-
     }
-
-    @Override
-    public void clearCache() {
-        CACHE.remove(cacheKey);
-    }
-    
-    @Override
-    public void setCacheKey(String cacheKey) {
-        this.cacheKey = cacheKey;
-    }
-
-    @Override
-    public String getCacheKey() {
-        return cacheKey;
-    }
-
 }

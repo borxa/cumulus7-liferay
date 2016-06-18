@@ -46,7 +46,7 @@ public class CumulusObservationsPortlet extends MVCPortlet {
     public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse)
             throws IOException, PortletException {
 
-        JSONObject json = getCumulus().json("http://meteo.a-revolta.es/cumulus7.json", 30);
+        JSONObject json = getCumulus().getJSON("http://meteo.a-revolta.es/cumulus7.json", 30);
         LOG.debug(json.toString());
         
         resourceResponse.setContentType(ContentTypes.APPLICATION_JSON);

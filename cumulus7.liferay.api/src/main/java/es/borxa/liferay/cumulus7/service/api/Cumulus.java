@@ -17,22 +17,6 @@ public interface Cumulus {
      * @param timeToLive seconds in cache
      * @return Object to encapsulate JSON file
      */
-    public JSONObject json(String url, int timeToLive);
+    public JSONObject getJSON(String url, int timeToLive);
     
-    /**
-     * Clear object saved in cache
-     */
-    public void clearCache();
-    
-    /**
-     * Set identificator for cache object
-     * @param cacheKey Unique identificator for cache object
-     */
-    public void setCacheKey(String cacheKey);
-    
-    /**
-     * Get identificator of cache object
-     * @return String Identificator for cache object
-     */
-    public String getCacheKey();
 }
