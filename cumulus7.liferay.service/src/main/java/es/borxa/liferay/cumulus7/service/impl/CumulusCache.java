@@ -37,5 +37,9 @@ public class CumulusCache {
     void setCacheKey(String cacheKey) {
         this.cacheKey = cacheKey;
     }
+    
+    String getCacheKey() {
+        return this.cacheKey;
+    }
 
 }

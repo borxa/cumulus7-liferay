@@ -35,10 +35,27 @@ public class CumulusImpl implements Cumulus {
                 json = JSONFactoryUtil.createJSONObject(HttpUtil.URLtoString(new URL(url)));
                 cache.put(json, timeToLive);
             } catch (IOException | JSONException ex) {
-                json = JSONFactoryUtil.createJSONObject();
                 LOG.warn(ex);
+                json = JSONFactoryUtil.createJSONObject();
             }
         }
         return json;
+
     }
+
+    @Override
+    public void clearCache() {
+        cache.clear();
+    }
+    
+    @Override
+    public void setCacheKey(String cacheKey) {
+        cache.setCacheKey(cacheKey);
+    }
+
+    @Override
+    public String getCacheKey() {
+        return cache.getCacheKey();
+    }
+
 }
