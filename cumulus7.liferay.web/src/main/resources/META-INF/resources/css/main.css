@@ -1,1 +1,16 @@
-
+.portlet-cumulus-observations .container-fluid {
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border: 1px solid #AAA;
+}
+.portlet-cumulus-observations .row-fluid div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 15px;
+}
+.portlet-cumulus-charts img {
+    width: 100%;
+    margin: 2px 0px;
+}

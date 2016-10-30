@@ -57,9 +57,8 @@ function updateWeather(A, json) {
         this.html(value + ' ' + valueUnit);
     });
     A.all('.currentwdir').each(function () {
-        var value = json.wgust.replace(',', '.');
-        var valueUnit = json.windunit;
-        this.html(value + ' ' + valueUnit);
+        var value = json.currentwdir;
+        this.html(value);
     });
     A.all('.rhour').each(function () {
         var value = json.rhour.replace(',', '.');

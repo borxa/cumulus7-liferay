@@ -3,38 +3,38 @@
 <liferay-ui:error key="JSONDataNotFound" message="json-data-not-found" />
 <liferay-portlet:resourceURL var="resourceURL"/>
 
-<table class="table table-hover">
-    <tr>
-        <td><liferay-ui:message key="temperature" /></td>
-        <td class="temp text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="int-temperature" /></td>
-        <td class="intemp text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="humidity" /></td>
-        <td class="hum text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="int-humidity" /></td>
-        <td class="inhum text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="wind-speed" /></td>
-        <td class="wspeed text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="current-wind-direction" /></td>
-        <td class="currentwdir text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="rfall-last-hour" /></td>
-        <td class="rhour text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-    <tr>
-        <td><liferay-ui:message key="last-update" /></td>
-        <td class="timehhmmss text-right"><liferay-ui:message key="loading" />...</td>
-    </tr>
-</table>
-<aui:button cssClass="observations-json-link" data-href="${resourceURL}" value="refresh" />
+<div class="portlet-cumulus-observations container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="temperature"/></div>
+        <div class="temp col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="int-temperature"/></div>
+        <div class="intemp col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="humidity"/></div>
+        <div class="hum col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="int-humidity"/></div>
+        <div class="inhum col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="wind-speed"/></div>
+        <div class="wspeed col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="current-wind-direction"/></div>
+        <div class="currentwdir col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="rfall-last-hour"/></div>
+        <div class="rhour col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-8"><liferay-ui:message key="last-update"/></div>
+        <div class="timehhmmss col-md-4 text-right"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+</div>
+<aui:button cssClass="observations-json-link" data-href="${resourceURL}" value="refresh"/>
