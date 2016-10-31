@@ -1,3 +1,4 @@
+/* Cumulus Observations */
 .portlet-cumulus-observations .container-fluid {
     margin-bottom: 15px;
     padding-top: 15px;
@@ -10,7 +11,13 @@
     border-bottom: 1px solid #AAA;
     margin-bottom: 15px;
 }
+/* Cumulus Charts */
 .portlet-cumulus-charts img {
     width: 100%;
     margin: 2px 0px;
+}
+/* Cumulus Now */
+.portlet-cumulus-now .row-fluid div {
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 15px;
 }

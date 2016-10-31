@@ -10,6 +10,9 @@ public final class CumulusPortletKeys {
     public static final String FORECAST = "forecast";
     public static final String MOONPHASE = "moonphase";
     public static final String OBSERVATIONS = "observations";
+    public static final String NOW = "now";
+    public static final String TODAY = "today";
+    public static final String YESTERDAY = "yesterday";
     
     private CumulusPortletKeys() {}
 }
