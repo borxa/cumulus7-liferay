@@ -3,7 +3,10 @@ package es.borxa.liferay.cumulus7.web;
 import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
+import com.liferay.portal.kernel.portlet.PortletResponseUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
+import com.liferay.portal.kernel.servlet.HttpHeaders;
+import com.liferay.portal.kernel.util.ContentTypes;
 import es.borxa.liferay.cumulus7.service.api.Cumulus;
 import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
@@ -11,6 +14,8 @@ import javax.portlet.Portlet;
 import javax.portlet.PortletException;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
+import javax.portlet.ResourceRequest;
+import javax.portlet.ResourceResponse;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -53,6 +58,20 @@ public class CumulusNowPortlet extends MVCPortlet {
         renderRequest.setAttribute("altitude", json.get("altitude"));
         
         super.doView(renderRequest, renderResponse);
+    }
+    
+    @Override
+    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse)
+            throws IOException, PortletException {
+
+        JSONObject json = getCumulus().getJSON("http://meteo.a-revolta.es/cumulus7.json", 30);
+        LOG.debug(json.toString());
+        
+        resourceResponse.setContentType(ContentTypes.APPLICATION_JSON);
+        resourceResponse.addProperty(
+                HttpHeaders.CACHE_CONTROL, HttpHeaders.CACHE_CONTROL_PUBLIC_VALUE);
+
+        PortletResponseUtil.write(resourceResponse, json.toString());
     }
 
     public Cumulus getCumulus() {

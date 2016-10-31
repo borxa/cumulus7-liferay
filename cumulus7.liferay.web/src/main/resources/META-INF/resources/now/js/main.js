@@ -19,7 +19,7 @@ AUI().ready('node', 'aui-io-request',
 );
 
 function getJSONValues(A) {
-    A.io.request("http://meteo.a-revolta.es/cumulus7.json", {
+    A.io.request(A.one('.portlet-cumulus-now .now-json-link').getAttribute('data-href'), {
         dataType: 'json',
         on: {
             success: function () {
@@ -31,9 +31,16 @@ function getJSONValues(A) {
 }
 
 function updateInfo(A, json) {
-    A.all('div[data-json]').each(function () {
+    A.all('[data-json]').each(function () {
         var key = this.getAttribute('data-json');
-        var value = json[key];
-        this.html(value);
+        var unit = this.getAttribute('data-unit');
+        var text = '';
+        if(json[key] !== undefined) {
+            text += json[key];
+            if(unit !== undefined) {
+                text += ' ' + unit;
+            }
+            this.html(text);
+        }
     });
 }
