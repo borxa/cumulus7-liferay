@@ -1,0 +1,33 @@
+<br/>
+<div class="well container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='current-wind-speed'/>"><liferay-ui:message key="current-wind-speed"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wlatest" data-unit="km/h"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-direction'/>"><liferay-ui:message key="wind-direction"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="currentwdir"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-speed-gust'/>"><liferay-ui:message key="wind-speed-gust"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wgust" data-unit="km/h"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-bearing'/>"><liferay-ui:message key="wind-bearing"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="bearing" data-unit="º"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-speed-avg'/>"><liferay-ui:message key="wind-speed-avg"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wspeed" data-unit="km/h"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-bearing-avg'/>"><liferay-ui:message key="wind-bearing-avg"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="avgbearing" data-unit="º"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-bearing-range-from'/>"><liferay-ui:message key="wind-bearing-range-from"/></div>
+        <div class="col-md-2 col-xs-5 text-right">${bearingrangefrom10}º (${bearingrangefrom}º)</div>
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-bearing-range-to'/>"><liferay-ui:message key="wind-bearing-range-to"/></div>
+        <div class="col-md-2 col-xs-5 text-right">${bearingrangeto10}º (${bearingrangeto}º)</div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='beaufort-scale'/>"><liferay-ui:message key="beaufort-scale"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="beaufort"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-4 col-xs-7" data-json="beaudesc"><liferay-ui:message key="loading"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wdir"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+</div>

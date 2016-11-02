@@ -3,10 +3,7 @@ package es.borxa.liferay.cumulus7.web;
 import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
-import com.liferay.portal.kernel.portlet.PortletResponseUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
-import com.liferay.portal.kernel.servlet.HttpHeaders;
-import com.liferay.portal.kernel.util.ContentTypes;
 import es.borxa.liferay.cumulus7.service.api.Cumulus;
 import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
@@ -14,8 +11,6 @@ import javax.portlet.Portlet;
 import javax.portlet.PortletException;
 import javax.portlet.RenderRequest;
 import javax.portlet.RenderResponse;
-import javax.portlet.ResourceRequest;
-import javax.portlet.ResourceResponse;
 import org.osgi.service.component.annotations.Component;
 import org.osgi.service.component.annotations.Reference;
 
@@ -29,8 +24,9 @@ import org.osgi.service.component.annotations.Reference;
             "com.liferay.portlet.css-class-wrapper=portlet-cumulus-now",
             "com.liferay.portlet.display-category=category.cumulus",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
-            "com.liferay.portlet.footer-portlet-javascript=/now/js/main.js",
+            "com.liferay.portlet.footer-portlet-javascript=/js/main.js",
             "com.liferay.portlet.instanceable=true",
+            "javax.portlet.name=" + CumulusPortletKeys.NOW,
             "javax.portlet.display-name=" + CumulusPortletKeys.NOW,
             "javax.portlet.init-param.template-path=/",
             "javax.portlet.init-param.view-template=/now/view.jsp",
@@ -56,22 +52,14 @@ public class CumulusNowPortlet extends MVCPortlet {
         renderRequest.setAttribute("latitude", json.get("latitude"));
         renderRequest.setAttribute("longitude", json.get("longitude"));
         renderRequest.setAttribute("altitude", json.get("altitude"));
+        renderRequest.setAttribute("issunup", json.get("issunup"));
+        renderRequest.setAttribute("bearingrangefrom10", json.get("bearingrangefrom10"));
+        renderRequest.setAttribute("bearingrangefrom", json.get("bearingrangefrom"));
+        renderRequest.setAttribute("bearingrangeto10", json.get("bearingrangeto10"));
+        renderRequest.setAttribute("bearingrangeto", json.get("bearingrangeto"));
+        
         
         super.doView(renderRequest, renderResponse);
-    }
-    
-    @Override
-    public void serveResource(ResourceRequest resourceRequest, ResourceResponse resourceResponse)
-            throws IOException, PortletException {
-
-        JSONObject json = getCumulus().getJSON("http://meteo.a-revolta.es/cumulus7.json", 30);
-        LOG.debug(json.toString());
-        
-        resourceResponse.setContentType(ContentTypes.APPLICATION_JSON);
-        resourceResponse.addProperty(
-                HttpHeaders.CACHE_CONTROL, HttpHeaders.CACHE_CONTROL_PUBLIC_VALUE);
-
-        PortletResponseUtil.write(resourceResponse, json.toString());
     }
 
     public Cumulus getCumulus() {

@@ -25,6 +25,7 @@ import org.osgi.service.component.annotations.Reference;
             "com.liferay.portlet.display-category=category.cumulus",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
+            "javax.portlet.name=" + CumulusPortletKeys.MOONPHASE,
             "javax.portlet.display-name=" + CumulusPortletKeys.MOONPHASE,
             "javax.portlet.init-param.template-path=/",
             "javax.portlet.init-param.view-template=/moonphase/view.jsp",

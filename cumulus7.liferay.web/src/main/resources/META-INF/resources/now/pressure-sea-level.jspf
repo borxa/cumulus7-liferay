@@ -1,0 +1,14 @@
+<br/>
+<div class="well container-fluid">
+    <div class="row-fluid">
+        <div class="col-md-3 col-xs-6" title="<liferay-ui:message key='barometer'/>"><liferay-ui:message key="barometer"/></div>
+        <div class="col-md-3 col-xs-6 text-right" data-json="press" data-unit="hPa"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-3 col-xs-6" title="<liferay-ui:message key='altimeter-pressure'/>"><liferay-ui:message key="altimeter-pressure"/></div>
+        <div class="col-md-3 col-xs-6 text-right" data-json="altimeterpressure" data-unit="hPa"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='pressure-trend'/>"><liferay-ui:message key="pressure-trend"/></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="presstrendval" data-unit="hPa"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-6 col-xs-12" data-json="presstrend"><small><liferay-ui:message key="loading"/></small></div>
+    </div>
+</div>

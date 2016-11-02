@@ -25,6 +25,7 @@ import org.osgi.service.component.annotations.Reference;
             "com.liferay.portlet.display-category=category.cumulus",
             "com.liferay.portlet.header-portlet-css=/css/main.css",
             "com.liferay.portlet.instanceable=true",
+            "javax.portlet.name=" + CumulusPortletKeys.TODAY,
             "javax.portlet.display-name=" + CumulusPortletKeys.TODAY,
             "javax.portlet.init-param.template-path=/",
             "javax.portlet.init-param.view-template=/today/view.jsp",
