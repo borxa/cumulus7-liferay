@@ -15,6 +15,10 @@
             <div class="col-md-3 text-right">${ttemptl}</div>
         </div>
         <div class="row-fluid">
+            <div class="col-md-6"><liferay-ui:message key="average-temperature"/></div>
+            <div class="col-md-3 text-right">${avgtemp} ºC</div>
+        </div>
+        <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="temperature-range"/></div>
             <div class="col-md-3 text-right">${temprange} ºC</div>
         </div>

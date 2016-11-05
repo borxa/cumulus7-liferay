@@ -45,10 +45,58 @@ public class CumulusYesterdayPortlet extends MVCPortlet {
 
         JSONObject json = getCumulus().getJSON("http://meteo.a-revolta.es/cumulus7.json", 30);
         LOG.debug(json.toString());
-        
-        renderRequest.setAttribute("isdaylight", json.get("isdaylight"));
-        renderRequest.setAttribute("forecastnumber", json.get("forecastnumber"));
-        
+
+        renderRequest.setAttribute("tempyh", json.get("tempyh"));
+        renderRequest.setAttribute("ttempyh", json.get("ttempyh"));
+        renderRequest.setAttribute("tempyl", json.get("tempyl"));
+        renderRequest.setAttribute("ttempyl", json.get("ttempyl"));
+        renderRequest.setAttribute("avgtempy", json.get("avgtempy"));
+        renderRequest.setAttribute("temprangey", json.get("temprangey"));
+        renderRequest.setAttribute("apptempyh", json.get("apptempyh"));
+        renderRequest.setAttribute("tapptempyh", json.get("tapptempyh"));
+        renderRequest.setAttribute("apptempyl", json.get("apptempyl"));
+        renderRequest.setAttribute("tapptempyl", json.get("tapptempyl"));
+        renderRequest.setAttribute("ttempyh", json.get("ttempyh"));
+        renderRequest.setAttribute("heatindexyh", json.get("heatindexyh"));
+        renderRequest.setAttribute("theatindexyh", json.get("theatindexyh"));
+        renderRequest.setAttribute("wchillyl", json.get("wchillyl"));
+        renderRequest.setAttribute("twchillyl", json.get("twchillyl"));
+        renderRequest.setAttribute("ttempyh", json.get("ttempyh"));
+        renderRequest.setAttribute("dewpointyh", json.get("dewpointyh"));
+        renderRequest.setAttribute("tdewpointyh", json.get("tdewpointyh"));
+        renderRequest.setAttribute("dewpointyl", json.get("dewpointyl"));
+        renderRequest.setAttribute("tdewpointyl", json.get("tdewpointyl"));
+        renderRequest.setAttribute("tempyh", json.get("tempyh"));
+        renderRequest.setAttribute("humyh", json.get("humyh"));
+        renderRequest.setAttribute("thumyh", json.get("thumyh"));
+        renderRequest.setAttribute("humyl", json.get("humyl"));
+        renderRequest.setAttribute("thumyl", json.get("thumyl"));
+        renderRequest.setAttribute("tdewpointyh", json.get("tdewpointyh"));
+        renderRequest.setAttribute("heatdegdaysy", json.get("heatdegdaysy"));
+        renderRequest.setAttribute("cooldegdaysy", json.get("cooldegdaysy"));
+
+        renderRequest.setAttribute("rfally", json.get("rfally"));
+        renderRequest.setAttribute("rrateym", json.get("rrateym"));
+        renderRequest.setAttribute("trrateym", json.get("trrateym"));
+        renderRequest.setAttribute("hourlyrainyh", json.get("hourlyrainyh"));
+        renderRequest.setAttribute("thourlyrainyh", json.get("thourlyrainyh"));
+
+        renderRequest.setAttribute("wgustym", json.get("wgustym"));
+        renderRequest.setAttribute("twgustym", json.get("twgustym"));
+        renderRequest.setAttribute("windym", json.get("windym"));
+        renderRequest.setAttribute("twindym", json.get("twindym"));
+        renderRequest.setAttribute("bearingym", json.get("bearingym"));
+        renderRequest.setAttribute("twgustym", json.get("twgustym"));
+        renderRequest.setAttribute("domwinddiry", json.get("domwinddiry"));
+        renderRequest.setAttribute("windruny", json.get("windruny"));
+        renderRequest.setAttribute("ybeaufort", json.get("ybeaufort"));
+        renderRequest.setAttribute("ybeaudesc", json.get("ybeaudesc"));
+
+        renderRequest.setAttribute("pressyh", json.get("pressyh"));
+        renderRequest.setAttribute("tpressyh", json.get("tpressyh"));
+        renderRequest.setAttribute("pressyl", json.get("pressyl"));
+        renderRequest.setAttribute("tpressyl", json.get("tpressyl"));
+
         super.doView(renderRequest, renderResponse);
     }
 

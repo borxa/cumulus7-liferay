@@ -32,3 +32,11 @@
     border-bottom: 1px solid #AAA;
     margin-bottom: 15px;
 }
+/* Cumulus Yesterday */
+.portlet-cumulus-yesterday .row-fluid div {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 1px solid #AAA;
+    margin-bottom: 15px;
+}

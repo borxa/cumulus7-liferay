@@ -50,6 +50,7 @@ public class CumulusTodayPortlet extends MVCPortlet {
         renderRequest.setAttribute("ttempth", json.get("ttempth"));
         renderRequest.setAttribute("temptl", json.get("temptl"));
         renderRequest.setAttribute("ttemptl", json.get("ttemptl"));
+        renderRequest.setAttribute("avgtemp", json.get("avgtemp"));
         renderRequest.setAttribute("temprange", json.get("temprange"));
         renderRequest.setAttribute("apptempth", json.get("apptempth"));
         renderRequest.setAttribute("tapptempth", json.get("tapptempth"));
