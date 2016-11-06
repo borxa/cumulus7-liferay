@@ -2,39 +2,39 @@
 <div class="well container-fluid">
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='temperature'/>"><liferay-ui:message key="temperature"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="temp" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="temp" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='humidity'/>"><liferay-ui:message key="humidity"/></div>
         <div class="col-md-2 col-xs-5 text-right" data-json="hum" data-unit="%"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='apparent-temperature'/>"><liferay-ui:message key="apparent-temperature"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="apptemp" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="apptemp" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='temperature-trend'/>"><liferay-ui:message key="temperature-trend"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="temptrend" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="temptrend" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wet-thermometer'/>"><liferay-ui:message key="wet-thermometer"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="wetbulb" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wetbulb" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='last-hour-variation'/>"><liferay-ui:message key="last-hour-variation"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="tempchangelasthour" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="tempchangelasthour" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='average-temperature'/>"><liferay-ui:message key="average-temperature"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="avgtemp" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="avgtemp" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='dew-point'/>"><liferay-ui:message key="dew-point"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="dew" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="dew" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='wind-chill'/>"><liferay-ui:message key="wind-chill"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="wchill" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="wchill" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='chill-hours'/>"><liferay-ui:message key="chill-hours"/></div>
         <div class="col-md-2 col-xs-5 text-right" data-json="chillhours"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='humidex'/>"><liferay-ui:message key="humidex"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="humidex" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="humidex" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='heat-index'/>"><liferay-ui:message key="heat-index"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="heatindex" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="heatindex" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='cloudbase'/>"><liferay-ui:message key="cloudbase"/></div>

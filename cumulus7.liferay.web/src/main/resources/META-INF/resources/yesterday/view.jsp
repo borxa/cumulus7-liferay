@@ -6,50 +6,50 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="high-temperature"/></div>
-            <div class="col-md-3 text-right">${tempyh} ºC</div>
+            <div class="col-md-3 text-right">${tempyh} &#8451;</div>
             <div class="col-md-3 text-right">${ttempyh}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="low-temperature"/></div>
-            <div class="col-md-3 text-right">${tempyl} ºC</div>
+            <div class="col-md-3 text-right">${tempyl} &#8451;</div>
             <div class="col-md-3 text-right">${ttempyl}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="average-temperature"/></div>
-            <div class="col-md-3 text-right">${avgtempy} ºC</div>
+            <div class="col-md-3 text-right">${avgtempy} &#8451;</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="temperature-range"/></div>
-            <div class="col-md-3 text-right">${temprangey} ºC</div>
+            <div class="col-md-3 text-right">${temprangey} &#8451;</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="high-apparent-temperature"/></div>
-            <div class="col-md-3 text-right">${apptempyh} ºC</div>
+            <div class="col-md-3 text-right">${apptempyh} &#8451;</div>
             <div class="col-md-3 text-right">${tapptempyh}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="low-apparent-temperature"/></div>
-            <div class="col-md-3 text-right">${apptempyl} ºC</div>
+            <div class="col-md-3 text-right">${apptempyl} &#8451;</div>
             <div class="col-md-3 text-right">${tapptempyl}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="high-heat-index"/></div>
-            <div class="col-md-3 text-right">${heatindexyh} ºC</div>
+            <div class="col-md-3 text-right">${heatindexyh} &#8451;</div>
             <div class="col-md-3 text-right">${theatindexyh}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="low-wind-chill"/></div>
-            <div class="col-md-3 text-right">${wchillyl} ºC</div>
+            <div class="col-md-3 text-right">${wchillyl} &#8451;</div>
             <div class="col-md-3 text-right">${twchillyl}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="maximum-dew-point"/></div>
-            <div class="col-md-3 text-right">${dewpointyh} ºC</div>
+            <div class="col-md-3 text-right">${dewpointyh} &#8451;</div>
             <div class="col-md-3 text-right">${tdewpointyh}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="minimum-dew-point"/></div>
-            <div class="col-md-3 text-right">${dewpointyl} ºC</div>
+            <div class="col-md-3 text-right">${dewpointyl} &#8451;</div>
             <div class="col-md-3 text-right">${tdewpointyl}</div>
         </div>
         <div class="row-fluid">
@@ -64,11 +64,11 @@
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="heat-degree-days"/></div>
-            <div class="col-md-3 text-right">${heatdegdaysy} ºC</div>
+            <div class="col-md-3 text-right">${heatdegdaysy} &#8451;</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="cool-degreee-days"/></div>
-            <div class="col-md-3 text-right">${cooldegdaysy} ºC</div>
+            <div class="col-md-3 text-right">${cooldegdaysy} &#8451;</div>
         </div>
     </div>
 </liferay-ui:panel>
@@ -106,7 +106,7 @@
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="wind-bearing"/></div>
-            <div class="col-md-3 text-right">${bearingym}º</div>
+            <div class="col-md-3 text-right">${bearingym} &deg;</div>
             <div class="col-md-3 text-right">${twgustym}</div>
         </div> 
         <div class="row-fluid">

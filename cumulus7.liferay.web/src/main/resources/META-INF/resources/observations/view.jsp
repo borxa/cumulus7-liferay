@@ -6,11 +6,11 @@
 <div class="container-fluid json-block-url" data-href="${resourceURL}">
     <div class="row-fluid">
         <div class="col-md-8"><liferay-ui:message key="temperature"/></div>
-        <div class="temp col-md-4 text-right" data-json="temp" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="temp col-md-4 text-right" data-json="temp" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-8"><liferay-ui:message key="int-temperature"/></div>
-        <div class="intemp col-md-4 text-right" data-json="intemp" data-unit="ºC"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="intemp col-md-4 text-right" data-json="intemp" data-unit="&#8451;"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-8"><liferay-ui:message key="humidity"/></div>
