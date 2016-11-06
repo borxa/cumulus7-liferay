@@ -77,16 +77,16 @@
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="rainfall-today"/></div>
-            <div class="col-md-3 text-right">${rfall} l/m2</div>
+            <div class="col-md-3 text-right">${rfall} l/m<sup>2</sup></div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="rainfall-rate-max"/></div>
-            <div class="col-md-3 text-right">${rratetm} l/m2</div>
+            <div class="col-md-3 text-right">${rratetm} l/m<sup>2</sup></div>
             <div class="col-md-3 text-right">${trratetm}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6"><liferay-ui:message key="high-hourly-rainfall"/></div>
-            <div class="col-md-3 text-right">${hourlyrainth} l/m2</div>
+            <div class="col-md-3 text-right">${hourlyrainth} l/m<sup>2</sup></div>
             <div class="col-md-3 text-right">${thourlyrainth}</div>
         </div> 
         <div class="row-fluid">

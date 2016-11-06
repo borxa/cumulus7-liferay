@@ -1,4 +1,4 @@
-Bundle-Version: 0.0.1
+Bundle-Version: 1.0.0
 Bundle-Name: Cumulus Portlets
 Bundle-SymbolicName: cumulus7.liferay.web
 -jsp: *.jsp,*.jspf

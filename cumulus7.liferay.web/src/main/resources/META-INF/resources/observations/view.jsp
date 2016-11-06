@@ -30,7 +30,7 @@
     </div>
     <div class="row-fluid">
         <div class="col-md-8"><liferay-ui:message key="rfall-last-hour"/></div>
-        <div class="rhour col-md-4 text-right" data-json="rhour" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="rhour col-md-4 text-right" data-json="rhour" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-8"><liferay-ui:message key="last-update"/></div>

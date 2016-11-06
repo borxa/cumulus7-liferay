@@ -2,25 +2,25 @@
 <div class="well container-fluid">
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-rate'/>"><liferay-ui:message key="rainfall-rate"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="rrate" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="rrate" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-today'/>"><liferay-ui:message key="rainfall-today"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="rfall" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="rfall" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-last-hour'/>"><liferay-ui:message key="rainfall-last-hour"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="rhour" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="rhour" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-this-month'/>"><liferay-ui:message key="rainfall-this-month"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="rmonth" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="rmonth" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-since-midnight'/>"><liferay-ui:message key="rainfall-since-midnight"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="rmidnight" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="rmidnight" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-3 col-xs-6" title="<liferay-ui:message key='rainfall-this-year'/>"><liferay-ui:message key="rainfall-this-year"/></div>
-        <div class="col-md-3 col-xs-6 text-right" data-json="ryear" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-3 col-xs-6 text-right" data-json="ryear" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
     </div>
     <div class="row-fluid">
         <div class="col-md-4 col-xs-7" title="<liferay-ui:message key='rainfall-last-24h'/>"><liferay-ui:message key="rainfall-last-24h"/></div>
-        <div class="col-md-2 col-xs-5 text-right" data-json="r24hour" data-unit="l/m2"><small><liferay-ui:message key="loading"/></small></div>
+        <div class="col-md-2 col-xs-5 text-right" data-json="r24hour" data-unit="l/m<sup>2</sup>"><small><liferay-ui:message key="loading"/></small></div>
         <div class="col-md-3 col-xs-6" title="<liferay-ui:message key='last-rainfall'/>"><liferay-ui:message key="last-rainfall"/></div>
         <div class="col-md-3 col-xs-6 text-right" data-json="lastraintipiso"><liferay-ui:message key="loading"/></div>
     </div>
