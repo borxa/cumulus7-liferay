@@ -5,69 +5,69 @@
 <liferay-ui:panel title="temperature-and-humidity" state="close">
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="high-temperature"/></div>
-            <div class="col-md-3 text-right">${tempth} &#8451;</div>
-            <div class="col-md-3 text-right">${ttempth}</div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="high-temperature"/></div>
+            <div class="col-md-3 col-xs-4 text-right">${tempth} &#8451;</div>
+            <div class="col-md-3 col-xs-2 text-right">${ttempth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="low-temperature"/></div>
-            <div class="col-md-3 text-right">${temptl} &#8451;</div>
-            <div class="col-md-3 text-right">${ttemptl}</div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="low-temperature"/></div>
+            <div class="col-md-3 col-xs-4 text-right">${temptl} &#8451;</div>
+            <div class="col-md-3 col-xs-2 text-right">${ttemptl}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="average-temperature"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="average-temperature"/></div>
             <div class="col-md-3 text-right">${avgtemp} &#8451;</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="temperature-range"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="temperature-range"/></div>
             <div class="col-md-3 text-right">${temprange} &#8451;</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="high-apparent-temperature"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="high-apparent-temperature"/></div>
             <div class="col-md-3 text-right">${apptempth} &#8451;</div>
             <div class="col-md-3 text-right">${tapptempth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="low-apparent-temperature"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="low-apparent-temperature"/></div>
             <div class="col-md-3 text-right">${apptemptl} &#8451;</div>
             <div class="col-md-3 text-right">${tapptemptl}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="high-heat-index"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="high-heat-index"/></div>
             <div class="col-md-3 text-right">${heatindexth} &#8451;</div>
             <div class="col-md-3 text-right">${theatindexth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="low-wind-chill"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="low-wind-chill"/></div>
             <div class="col-md-3 text-right">${wchilltl} &#8451;</div>
             <div class="col-md-3 text-right">${twchilltl}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="maximum-dew-point"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="maximum-dew-point"/></div>
             <div class="col-md-3 text-right">${dewpointth} &#8451;</div>
             <div class="col-md-3 text-right">${tdewpointth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="minimum-dew-point"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="minimum-dew-point"/></div>
             <div class="col-md-3 text-right">${dewpointtl} &#8451;</div>
             <div class="col-md-3 text-right">${tdewpointtl}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="high-humidity"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="high-humidity"/></div>
             <div class="col-md-3 text-right">${humth} %</div>
             <div class="col-md-3 text-right">${thumth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="low-humidity"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="low-humidity"/></div>
             <div class="col-md-3 text-right">${humtl} %</div>
             <div class="col-md-3 text-right">${thumtl}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="heat-degree-days"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="heat-degree-days"/></div>
             <div class="col-md-3 text-right">${heatdegdays} &#8451;</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="cool-degreee-days"/></div>
+            <div class="col-md-6 col-xs-6"><liferay-ui:message key="cool-degreee-days"/></div>
             <div class="col-md-3 text-right">${cooldegdays} &#8451;</div>
         </div>
     </div>
