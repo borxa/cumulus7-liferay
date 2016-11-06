@@ -10,15 +10,15 @@ import com.liferay.portal.kernel.json.JSONObject;
  */
 public class CumulusCache {
 
-    private final PortalCache<String, JSONObject> cache;
+    private static PortalCache<String, JSONObject> cache;
     private String cacheKey = "cumulus-default";
     private static final CumulusCache INSTANCE = new CumulusCache();
 
     private CumulusCache() {
-        cache = SingleVMPoolUtil.getPortalCache(CumulusCache.class.getName());
     }
 
     static CumulusCache getInstance() {
+        cache = SingleVMPoolUtil.getPortalCache(CumulusCache.class.getName());
         return INSTANCE;
     }
 
@@ -37,7 +37,7 @@ public class CumulusCache {
     void setCacheKey(String cacheKey) {
         this.cacheKey = cacheKey;
     }
-    
+
     String getCacheKey() {
         return this.cacheKey;
     }
