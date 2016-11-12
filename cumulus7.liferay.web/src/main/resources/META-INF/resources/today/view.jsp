@@ -5,14 +5,14 @@
 <liferay-ui:panel title="temperature-and-humidity" state="close">
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="col-md-6 col-xs-6"><liferay-ui:message key="high-temperature"/></div>
+            <div class="col-md-6 col-xs-5"><liferay-ui:message key="high-temperature"/></div>
             <div class="col-md-3 col-xs-4 text-right">${tempth} &#8451;</div>
-            <div class="col-md-3 col-xs-2 text-right">${ttempth}</div>
+            <div class="col-md-3 col-xs-3 text-right">${ttempth}</div>
         </div>
         <div class="row-fluid">
-            <div class="col-md-6 col-xs-6"><liferay-ui:message key="low-temperature"/></div>
+            <div class="col-md-6 col-xs-5"><liferay-ui:message key="low-temperature"/></div>
             <div class="col-md-3 col-xs-4 text-right">${temptl} &#8451;</div>
-            <div class="col-md-3 col-xs-2 text-right">${ttemptl}</div>
+            <div class="col-md-3 col-xs-3 text-right">${ttemptl}</div>
         </div>
         <div class="row-fluid">
             <div class="col-md-6 col-xs-6"><liferay-ui:message key="average-temperature"/></div>

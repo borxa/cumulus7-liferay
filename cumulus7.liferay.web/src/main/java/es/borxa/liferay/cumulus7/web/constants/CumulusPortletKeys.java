@@ -13,6 +13,7 @@ public final class CumulusPortletKeys {
     public static final String NOW = "now";
     public static final String TODAY = "today";
     public static final String YESTERDAY = "yesterday";
+    public static final String GAUGES = "gauges";
     
     private CumulusPortletKeys() {}
 }

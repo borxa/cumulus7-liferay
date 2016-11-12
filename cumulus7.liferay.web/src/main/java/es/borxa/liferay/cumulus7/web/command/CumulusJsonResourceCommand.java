@@ -27,6 +27,7 @@ import org.osgi.service.component.annotations.Reference;
     property = {
         "javax.portlet.name=" + CumulusPortletKeys.NOW,
         "javax.portlet.name=" + CumulusPortletKeys.OBSERVATIONS,
+        "javax.portlet.name=" + CumulusPortletKeys.GAUGES,
         "mvc.command.name=/json/cumulus"
     },
     service = MVCResourceCommand.class

@@ -1,4 +1,4 @@
-AUI().ready('node', 'transition', 'aui-image-viewer', 'aui-io-request',
+AUI().ready('node', 'transition', 'aui-image-viewer', 'aui-io-request', 'aui-progressbar', 'liferay-portlet-url',
         function (A) {
             A.all('.portlet-cumulus-charts').each(function () {
                 setChartsAnim(A, this);
@@ -13,6 +13,12 @@ AUI().ready('node', 'transition', 'aui-image-viewer', 'aui-io-request',
 
             A.on('load',
                     function () {
+                        if (A.one('.portlet-cumulus-gauges')) {
+                            renderBars(A);
+                            setInterval(function () {
+                                renderBars(A);
+                            }, 30000);
+                        }
                         updateJSONValues(A);
                         setInterval(function () {
                             updateJSONValues(A);
@@ -77,4 +83,52 @@ function setChartsAnim(A, portletNode) {
             function () {
                 imageViewer.render();
             });
+}
+
+function renderBars(A) {
+    A.all('div.gauges-json-block-url').each(function () {
+        var div = this;
+        A.io.request(div.getAttribute('data-href'), {
+            dataType: 'json',
+            on: {
+                success: function () {
+                    var json = this.get('responseData');
+                    div.all('[data-json]').each(function () {
+                        if (json[this.getAttribute('data-json')] !== undefined) {
+                            var value = json[this.getAttribute('data-json')].replace(',', '.');
+                            var unit = '';
+                            if (this.getAttribute('data-unit') !== undefined) {
+                                unit = this.getAttribute('data-unit');
+                            }
+                            var break1 = this.getAttribute('data-break1');
+                            var break2 = this.getAttribute('data-break2');
+                            var break3 = this.getAttribute('data-break3');
+                            var min = parseInt(this.getAttribute('data-min'));
+                            var max = parseInt(this.getAttribute('data-max'));
+                            createBar(A, this, value, unit, [break1, break2, break3], [min, max]);
+                        }
+                    });
+                }
+            }
+        });
+    });
+}
+
+function createBar(A, node, value, valueUnit, breaksArray, minMax) {
+    node.all('div').remove(true);
+    var nodeClass = 'progress-bar-info';
+    if (value > breaksArray[0])
+        nodeClass = 'progress-bar-success';
+    if (value > breaksArray[1])
+        nodeClass = 'progress-bar-warning';
+    if (value > breaksArray[2])
+        nodeClass = 'progress-bar-danger';
+    new A.ProgressBar(
+            {
+                min: minMax[0],
+                max: minMax[1],
+                label: value + ' ' + valueUnit,
+                value: value,
+                cssClass: nodeClass
+            }).render(node);
 }
