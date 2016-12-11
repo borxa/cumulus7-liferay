@@ -76,7 +76,7 @@
 <liferay-ui:panel title="rainfall" state="close">
     <div class="container-fluid">
         <div class="row-fluid">
-            <div class="col-md-6"><liferay-ui:message key="rainfall-today"/></div>
+            <div class="col-md-6"><liferay-ui:message key="rainfall-yesterday"/></div>
             <div class="col-md-3 text-right">${rfally} l/m<sup>2</sup></div>
         </div>
         <div class="row-fluid">
