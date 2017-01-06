@@ -5,7 +5,7 @@
 <aui:form action="${configurationURL}" method="post" name="fm">
     <aui:input name="<%= Constants.CMD %>" type="hidden" value="<%= Constants.UPDATE %>" />
     <aui:input name="preferences--dataUrl--" type="text" 
-               value="${portletPreferences.getValue('dataUrl','http://meteo.a-revolta.es/data.json')}" />
+               value="${portletPreferences.getValue('dataUrl','http://revoltadosdices.es/meteo/data.json')}" />
     <aui:select name="preferences--currentWebTags--">
         <c:forEach var="webTag" items="${['system','now','forecast','moonphase','observations','today','yesterday']}">
             <aui:option label="${webTag}" value="${webTag}" selected="${webTag == portletPreferences.getValue('currentWebTags','system')}" />

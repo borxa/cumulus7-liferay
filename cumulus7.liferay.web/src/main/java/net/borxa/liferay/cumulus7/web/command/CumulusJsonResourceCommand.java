@@ -1,4 +1,4 @@
-package es.borxa.liferay.cumulus7.web.command;
+package net.borxa.liferay.cumulus7.web.command;
 
 import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
@@ -10,7 +10,7 @@ import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.util.ContentTypes;
 import com.liferay.portal.kernel.util.PortalUtil;
 import es.borxa.liferay.cumulus7.service.api.Cumulus;
-import es.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
+import net.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
 import javax.portlet.PortletException;
 import javax.portlet.ResourceRequest;
@@ -42,7 +42,7 @@ public class CumulusJsonResourceCommand implements MVCResourceCommand {
             throws PortletException {
         boolean result = false;
         
-        JSONObject json = getCumulus().getJSON("http://meteo.a-revolta.es/cumulus7.json", 30);
+        JSONObject json = getCumulus().getJSON("http://revoltadosdices.es/meteo/cumulus7.json", 30);
         LOG.debug(json.toString());
         
         response.setContentType(ContentTypes.APPLICATION_JSON);

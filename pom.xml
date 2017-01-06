@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     
     <modelVersion>4.0.0</modelVersion>
-    <groupId>es.borxa.liferay</groupId>
+    <groupId>net.borxa.liferay</groupId>
     <artifactId>cumulus7.liferay</artifactId>
     <version>1.0.0</version>
     <name>Cumulus 7</name>
