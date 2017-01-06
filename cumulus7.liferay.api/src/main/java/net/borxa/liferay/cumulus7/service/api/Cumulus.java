@@ -1,4 +1,4 @@
-package es.borxa.liferay.cumulus7.service.api;
+package net.borxa.liferay.cumulus7.service.api;
 
 import aQute.bnd.annotation.ProviderType;
 import com.liferay.portal.kernel.json.JSONObject;

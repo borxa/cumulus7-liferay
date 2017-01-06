@@ -1,4 +1,4 @@
-package es.borxa.liferay.cumulus7.service.impl;
+package net.borxa.liferay.cumulus7.service.impl;
 
 import com.liferay.portal.kernel.cache.PortalCache;
 import com.liferay.portal.kernel.cache.SingleVMPoolUtil;

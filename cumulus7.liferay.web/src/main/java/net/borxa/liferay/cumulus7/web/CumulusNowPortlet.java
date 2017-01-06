@@ -4,7 +4,7 @@ import com.liferay.portal.kernel.json.JSONObject;
 import com.liferay.portal.kernel.log.Log;
 import com.liferay.portal.kernel.log.LogFactoryUtil;
 import com.liferay.portal.kernel.portlet.bridges.mvc.MVCPortlet;
-import es.borxa.liferay.cumulus7.service.api.Cumulus;
+import net.borxa.liferay.cumulus7.service.api.Cumulus;
 import net.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
 import javax.portlet.Portlet;

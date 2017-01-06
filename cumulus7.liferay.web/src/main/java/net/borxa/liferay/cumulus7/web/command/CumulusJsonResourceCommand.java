@@ -9,7 +9,7 @@ import com.liferay.portal.kernel.servlet.HttpHeaders;
 import com.liferay.portal.kernel.servlet.SessionErrors;
 import com.liferay.portal.kernel.util.ContentTypes;
 import com.liferay.portal.kernel.util.PortalUtil;
-import es.borxa.liferay.cumulus7.service.api.Cumulus;
+import net.borxa.liferay.cumulus7.service.api.Cumulus;
 import net.borxa.liferay.cumulus7.web.constants.CumulusPortletKeys;
 import java.io.IOException;
 import javax.portlet.PortletException;
