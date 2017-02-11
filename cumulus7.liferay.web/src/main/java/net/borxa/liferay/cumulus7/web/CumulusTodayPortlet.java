@@ -107,8 +107,11 @@ public class CumulusTodayPortlet extends MVCPortlet {
     }
 
     @Reference
-    public void setCumulus(Cumulus cumulus) {
+    protected void setCumulus(Cumulus cumulus) {
         service = cumulus;
     }
 
+    protected void unsetCumulus(Cumulus cumulus) {
+        service = null;
+    }
 }

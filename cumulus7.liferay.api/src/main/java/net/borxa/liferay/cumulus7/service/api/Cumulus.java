@@ -1,7 +1,7 @@
 package net.borxa.liferay.cumulus7.service.api;
 
-import aQute.bnd.annotation.ProviderType;
 import com.liferay.portal.kernel.json.JSONObject;
+import org.osgi.annotation.versioning.ProviderType;
 
 /**
  * Cumulus service as client for JSON file with wheater data

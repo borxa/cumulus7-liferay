@@ -65,7 +65,11 @@ public class CumulusJsonResourceCommand implements MVCResourceCommand {
     }
 
     @Reference
-    public void setCumulus(Cumulus cumulus) {
+    protected void setCumulus(Cumulus cumulus) {
         service = cumulus;
+    }
+    
+    protected void unsetCumulus(Cumulus cumulus) {
+        service = null;
     }
 }
