@@ -2,4 +2,3 @@ Bundle-Version: 1.0.0
 Bundle-Name: Cumulus JSON API
 Bundle-SymbolicName: cumulus7.service.api
 Export-Package: net.borxa.liferay.cumulus7.service.api
--sources: true

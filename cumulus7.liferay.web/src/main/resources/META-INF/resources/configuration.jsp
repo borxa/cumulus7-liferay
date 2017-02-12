@@ -16,5 +16,4 @@
     <aui:button-row cssClass="button-row-center">
         <aui:button type="submit" value="save" />
     </aui:button-row>
-    
 </aui:form>

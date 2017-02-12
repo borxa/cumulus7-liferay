@@ -6,4 +6,3 @@ Bundle-SymbolicName: cumulus7.liferay.web
 -plugin.jsp: com.liferay.ant.bnd.jsp.JspAnalyzerPlugin
 -plugin.sass: com.liferay.ant.bnd.sass.SassAnalyzerPlugin
 -sass: *
--sources: true
